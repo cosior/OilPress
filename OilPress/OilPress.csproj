@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76993B63-A0B4-43D3-95C0-5F750FDF7E5C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OilPress</RootNamespace>
+    <AssemblyName>OilPress</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\costas1\Desktop\OilPress_V2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <TargetCulture>el</TargetCulture>
+    <ProductName>OilPress Management</ProductName>
+    <PublisherName>Costas Iordanou</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>27DFD73D58D706FB439068197AE4AADDF3449AC8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OilPress_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Olives.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Customer\DeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\DeleteCustomer.Designer.cs">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\EditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\EditCustomer.Designer.cs">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\NewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\NewCustomer.Designer.cs">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\DeleteEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\DeleteEmployee.Designer.cs">
+      <DependentUpon>DeleteEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\EditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\EditEmployee.Designer.cs">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\NewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\NewEmployee.Designer.cs">
+      <DependentUpon>NewEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Extra\ExpensesType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Extra\ExpensesType.Designer.cs">
+      <DependentUpon>ExpensesType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Extra\ExtraAreaIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Extra\ExtraAreaIntro.Designer.cs">
+      <DependentUpon>ExtraAreaIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Extra\GeneralExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Extra\GeneralExpenses.Designer.cs">
+      <DependentUpon>GeneralExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Extra\KilosToOil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Extra\KilosToOil.Designer.cs">
+      <DependentUpon>KilosToOil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Extra\VatRateValueChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Extra\VatRateValueChange.Designer.cs">
+      <DependentUpon>VatRateValueChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Invoice\CancelPurchaseInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Invoice\CancelPurchaseInvoice.Designer.cs">
+      <DependentUpon>CancelPurchaseInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Invoice\CancelSalesInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Invoice\CancelSalesInvoice.Designer.cs">
+      <DependentUpon>CancelSalesInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Product\EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Product\EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Product\FreeProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Product\FreeProduct.Designer.cs">
+      <DependentUpon>FreeProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Extra\AccessDenied.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Extra\AccessDenied.Designer.cs">
+      <DependentUpon>AccessDenied.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Invoice\InvoicesP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Invoice\InvoicesP.Designer.cs">
+      <DependentUpon>InvoicesP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Invoice\InvoicesS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Invoice\InvoicesS.Designer.cs">
+      <DependentUpon>InvoicesS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticCustomerForm.Designer.cs">
+      <DependentUpon>StatisticCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticEmployees.Designer.cs">
+      <DependentUpon>StatisticEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticPurchaseSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticPurchaseSelectionForm.Designer.cs">
+      <DependentUpon>StatisticPurchaseSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticSalaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticSalaryForm.Designer.cs">
+      <DependentUpon>StatisticSalaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticSellsSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticSellsSelectionForm.Designer.cs">
+      <DependentUpon>StatisticSellsSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticsGeneralExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticsGeneralExpenses.Designer.cs">
+      <DependentUpon>StatisticsGeneralExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticsProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Statistics\StatisticsProduct.Designer.cs">
+      <DependentUpon>StatisticsProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIForms\MainMenuOil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UIForms\MainMenuOil.Designer.cs">
+      <DependentUpon>MainMenuOil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIForms\MyVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UIForms\MyVersion.Designer.cs">
+      <DependentUpon>MyVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Product\NewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Product\NewProduct.Designer.cs">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIForms\TempReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UIForms\TempReceipt.Designer.cs">
+      <DependentUpon>TempReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\EditUserData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\EditUserData.Designer.cs">
+      <DependentUpon>EditUserData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\AddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\AddNewUser.Designer.cs">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Extra\SubLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Extra\SubLogin.Designer.cs">
+      <DependentUpon>SubLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\UserReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\UserReport.Designer.cs">
+      <DependentUpon>UserReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Support\FileHandler.cs" />
+    <Compile Include="Support\oilPressControl.cs" />
+    <Compile Include="Forms\UsersManagement\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersManagement\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIForms\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UIForms\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Customer\DeleteCustomer.resx">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\EditCustomer.resx">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\NewCustomer.resx">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\DeleteEmployee.resx">
+      <DependentUpon>DeleteEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\EditEmployee.resx">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\NewEmployee.resx">
+      <DependentUpon>NewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Extra\ExpensesType.resx">
+      <DependentUpon>ExpensesType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Extra\ExtraAreaIntro.resx">
+      <DependentUpon>ExtraAreaIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Extra\GeneralExpenses.resx">
+      <DependentUpon>GeneralExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Extra\KilosToOil.resx">
+      <DependentUpon>KilosToOil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Extra\VatRateValueChange.resx">
+      <DependentUpon>VatRateValueChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Invoice\CancelPurchaseInvoice.resx">
+      <DependentUpon>CancelPurchaseInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Invoice\CancelSalesInvoice.resx">
+      <DependentUpon>CancelSalesInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Product\EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Product\FreeProduct.resx">
+      <DependentUpon>FreeProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Extra\AccessDenied.resx">
+      <DependentUpon>AccessDenied.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Invoice\InvoicesP.resx">
+      <DependentUpon>InvoicesP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Invoice\InvoicesS.resx">
+      <DependentUpon>InvoicesS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statistics\StatisticCustomerForm.resx">
+      <DependentUpon>StatisticCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statistics\StatisticEmployees.resx">
+      <DependentUpon>StatisticEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statistics\StatisticPurchaseSelectionForm.resx">
+      <DependentUpon>StatisticPurchaseSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statistics\StatisticSalaryForm.resx">
+      <DependentUpon>StatisticSalaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statistics\StatisticSellsSelectionForm.resx">
+      <DependentUpon>StatisticSellsSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statistics\StatisticsGeneralExpenses.resx">
+      <DependentUpon>StatisticsGeneralExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statistics\StatisticsProduct.resx">
+      <DependentUpon>StatisticsProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UIForms\MainMenuOil.resx">
+      <DependentUpon>MainMenuOil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UIForms\MyVersion.resx">
+      <DependentUpon>MyVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Product\NewProduct.resx">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UIForms\TempReceipt.resx">
+      <DependentUpon>TempReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersManagement\DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersManagement\AddNewUser.resx">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersManagement\EditUserData.resx">
+      <DependentUpon>EditUserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersManagement\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersManagement\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UIForms\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Extra\SubLogin.resx">
+      <DependentUpon>SubLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersManagement\UserReport.resx">
+      <DependentUpon>UserReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="OilPress_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Olives.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
